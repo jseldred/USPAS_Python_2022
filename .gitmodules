@@ -58,3 +58,6 @@
 [submodule "USPAS_Python_2022_Thomas"]
 	path = USPAS_Python_2022_Thomas
 	url = https://github.com/jseldred/USPAS_Python_2022_Thomas.git
+[submodule "USPAS_Python_2022_Test"]
+	path = USPAS_Python_2022_Test
+	url = https://github.com/jseldred/USPAS_Python_2022_Test.git
