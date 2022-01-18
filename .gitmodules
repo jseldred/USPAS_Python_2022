@@ -1,0 +1,3 @@
+[submodule "USPAS_Python_2022_Adegun"]
+	path = USPAS_Python_2022_Adegun
+	url = https://github.com/jseldred/USPAS_Python_2022_Adegun.git
