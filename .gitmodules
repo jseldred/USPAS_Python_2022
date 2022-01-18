@@ -1,0 +1,6 @@
+[submodule "Aiken_Michael"]
+	path = Aiken_Michael
+	url = https://github.com/jseldred/USPAS_Python_2022.git
+[submodule "Adegun_Joseph"]
+	path = Adegun_Joseph
+	url = https://github.com/jseldred/USPAS_Python_2022.git
