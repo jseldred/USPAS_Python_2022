@@ -1,3 +1,60 @@
 [submodule "USPAS_Python_2022_Adegun"]
 	path = USPAS_Python_2022_Adegun
 	url = https://github.com/jseldred/USPAS_Python_2022_Adegun.git
+[submodule "USPAS_Python_2022_Aiken"]
+	path = USPAS_Python_2022_Aiken
+	url = https://github.com/jseldred/USPAS_Python_2022_Aiken.git
+[submodule "USPAS_Python_2022_Angelo"]
+	path = USPAS_Python_2022_Angelo
+	url = https://github.com/jseldred/USPAS_Python_2022_Angelo.git
+[submodule "USPAS_Python_2022_Asztalos"]
+	path = USPAS_Python_2022_Asztalos
+	url = https://github.com/jseldred/USPAS_Python_2022_Asztalos.git
+[submodule "USPAS_Python_2022_Berlioz_Rivera"]
+	path = USPAS_Python_2022_Berlioz_Rivera
+	url = https://github.com/jseldred/USPAS_Python_2022_Berlioz_Rivera.git
+[submodule "USPAS_Python_2022_Burleigh"]
+	path = USPAS_Python_2022_Burleigh
+	url = https://github.com/jseldred/USPAS_Python_2022_Burleigh.git
+[submodule "USPAS_Python_2022_Coats"]
+	path = USPAS_Python_2022_Coats
+	url = https://github.com/jseldred/USPAS_Python_2022_Coats.git
+[submodule "USPAS_Python_2022_Crisp"]
+	path = USPAS_Python_2022_Crisp
+	url = https://github.com/jseldred/USPAS_Python_2022_Crisp.git
+[submodule "USPAS_Python_2022_Freeman"]
+	path = USPAS_Python_2022_Freeman
+	url = https://github.com/jseldred/USPAS_Python_2022_Freeman.git
+[submodule "USPAS_Python_2022_Gavryushkin"]
+	path = USPAS_Python_2022_Gavryushkin
+	url = https://github.com/jseldred/USPAS_Python_2022_Gavryushkin.git
+[submodule "USPAS_Python_2022_Greene"]
+	path = USPAS_Python_2022_Greene
+	url = https://github.com/jseldred/USPAS_Python_2022_Greene.git
+[submodule "USPAS_Python_2022_Khanal"]
+	path = USPAS_Python_2022_Khanal
+	url = https://github.com/jseldred/USPAS_Python_2022_Khanal.git
+[submodule "USPAS_Python_2022_Lafky"]
+	path = USPAS_Python_2022_Lafky
+	url = https://github.com/jseldred/USPAS_Python_2022_Lafky.git
+[submodule "USPAS_Python_2022_Lokey"]
+	path = USPAS_Python_2022_Lokey
+	url = https://github.com/jseldred/USPAS_Python_2022_Lokey.git
+[submodule "USPAS_Python_2022_May"]
+	path = USPAS_Python_2022_May
+	url = https://github.com/jseldred/USPAS_Python_2022_May.git
+[submodule "USPAS_Python_2022_Rogers"]
+	path = USPAS_Python_2022_Rogers
+	url = https://github.com/jseldred/USPAS_Python_2022_Rogers.git
+[submodule "USPAS_Python_2022_Sankar_Raman"]
+	path = USPAS_Python_2022_Sankar_Raman
+	url = https://github.com/jseldred/USPAS_Python_2022_Sankar_Raman.git
+[submodule "USPAS_Python_2022_Shih"]
+	path = USPAS_Python_2022_Shih
+	url = https://github.com/jseldred/USPAS_Python_2022_Shih.git
+[submodule "USPAS_Python_2022_Silva_Torrecilla"]
+	path = USPAS_Python_2022_Silva_Torrecilla
+	url = https://github.com/jseldred/USPAS_Python_2022_Silva_Torrecilla.git
+[submodule "USPAS_Python_2022_Thomas"]
+	path = USPAS_Python_2022_Thomas
+	url = https://github.com/jseldred/USPAS_Python_2022_Thomas.git
