@@ -1,0 +1,28 @@
+1. Write a program that prints “Hello World”
+
+2. Write a program that creates a variable ‘x = 1’, then prints ‘x’.
+
+3. Write a program that creates a variable ‘x = 1’, sets ‘x’ to ‘x * 2’, then prints ‘x’.
+
+4. Write a program that creates a variable ‘x = 1’, create for loop that iterations three times,
+and each iteration it sets x to x *2, then prints ‘x’, then prints the loop variable ‘lp’.
+
+5. Write a program that create a variable x =1, create while loop that iterates until x > 1000,
+and each iteration it sets x to x *2, then prints ‘x’, then prints the number of loop iterations.
+
+6. Write a program that imports numpy, then that checks if the square root of 65 is greater than 8, then prints “Yes!” if it is.
+
+7. Write a program that imports numpy, creates a numpy array called ‘x’ of size 10 filled with zeros,
+then create a loop that fills each value of that ‘x’ sequentially 1, 2, 3… etc, printing ‘x’ at every iteration.
+
+8. Write a program that does 7, then create a loop that iterates three times,
+and within that loop create another loop that multiplies each value of ‘x’ sequentially by 2,
+and then after each inner loop within the outer loop print ‘x’.
+
+9. Write a program that does 7, then create a numpy array called ‘sfin’ of size 10 filled with zeros.
+Then create a loop that iterates until ‘sfin’ is filled with nonzero values,
+and within that loop create a loop that multiples each value of ‘x’ sequentially by 2 if the corresponding value of ‘sfin’ is zero,
+then within the inner loop if that value of ‘x’ is greater then 1000 sets the corresponding value of ‘sfin’ to the number of outer loop iterations (nonzero),
+then after both loops complete prints ‘x’ and ‘sfin’.
+
+
