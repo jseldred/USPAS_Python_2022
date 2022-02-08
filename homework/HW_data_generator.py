@@ -13,7 +13,7 @@ feer = 5*10.0**(-1)
 x = np.zeros(tnum)
 
 for lp in range(tnum):
-  x[lp] = np.cos( 2*np.pi*f_c*lp + a_m*np.sin(2*np.pi*f_c*lp) +feer*np.random.normal()) +aerr*np.random.normal()
+  x[lp] = np.cos( 2*np.pi*f_c*lp + a_m*np.sin(2*np.pi*f_m*lp) +feer*np.random.normal()) +aerr*np.random.normal()
 
 with open('HW_data', mode='w') as csv_file:
   csv_write = csv.writer(csv_file, delimiter=' ')
