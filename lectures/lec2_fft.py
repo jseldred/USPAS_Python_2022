@@ -13,7 +13,7 @@ t = np.arange(0,tmax,tstep)
 #t is in seconds, so the units of the frequency is Hz.
 real_freq = 1/7.0
 real_ampl = 3.4
-x = real_ampl*np.sin(2*np.pi*real_tune*t)
+x = real_ampl*np.sin(2*np.pi*real_freq*t)
 
 #draw the time-domain signal
 fig = plt.figure()

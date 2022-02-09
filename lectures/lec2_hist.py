@@ -53,7 +53,7 @@ plt.plot(hxbin,yvals)
 plt.title('1D Histogram, Sum of Two Uniform Random Numbers')
 plt.xlabel('Value of random number')
 plt.ylabel('Number of results')
-plt.ylim(0,np.max(yvals``)*1.1)
+plt.ylim(0,np.max(yvals)*1.1)
 plt.show()
 
 
