@@ -43,15 +43,9 @@ plt.savefig('lec3_poincare_2.png', bbox_inches='tight')
 plt.show()
 
 ####Linearly Coupled Horizontal and Vertical, precise bpms
-#linearly coupled tunes
+#tunes
 Qx = 0.78
 Qy = 0.80
-Qp = 0.5*(Qx+Qy)+0.5*lam
-Qm = 0.5*(Qx+Qy)-0.5*lam
-cp = np.cos(2*np.pi*Qp)
-sp = np.sin(2*np.pi*Qp)
-cm = np.cos(2*np.pi*Qm)
-sm = np.sin(2*np.pi*Qm)
 #linear coupling resonance parameters
 G = 0.05
 lam = np.sqrt((Qx-Qy)**2 + G**2)
@@ -59,6 +53,14 @@ delt = np.abs(Qx-Qy)
 Q = G/(lam+delt)
 Qa = 1/(1+Q**2)
 Qb = Q/(1+Q**2)
+#linearly coupled tunes
+Qp = 0.5*(Qx+Qy)+0.5*lam
+Qm = 0.5*(Qx+Qy)-0.5*lam
+cp = np.cos(2*np.pi*Qp)
+sp = np.sin(2*np.pi*Qp)
+cm = np.cos(2*np.pi*Qm)
+sm = np.sin(2*np.pi*Qm)
+
 
 #transfer matrices for linear couppling
 U = np.matrix([[Qa, 0, Qb, 0], [0, Qa, 0, Qb], [-Qb, 0, Qa, 0], [0, -Qb, 0, Qa]])
