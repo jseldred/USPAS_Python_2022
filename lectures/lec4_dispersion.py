@@ -2,9 +2,11 @@
 
 import numpy as np
 from sympy import *
+#this statement will render rho and theta as Greek
+init_printing()
 
 #Declare symbolic variables, the more information the better.
-f1,L1,rho,th = symbols('f1,L1,rho,th', real=True, positive=True)
+f1,L1,rho,th = symbols('f1,L1,rho,theta', real=True, positive=True)
 
 #Dispersion matrices for a quadrupole,drift,dipole are given by
 QF = Matrix([[1, 0, 0], [-1/f1, 1, 0], [0, 0, 1]])
