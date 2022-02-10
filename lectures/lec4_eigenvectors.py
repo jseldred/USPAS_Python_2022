@@ -23,6 +23,8 @@ e1 = Mvecs[0][0]
 e2 = Mvecs[1][0]
 v1 = Mvecs[0][2][0]
 v2 = Mvecs[1][2][0]
+v1
+v2
 
 #our decoupled variables we will call u and v
 #the eigenvalues tell us which values go in the differential equations for u and v
