@@ -1,0 +1,64 @@
+
+! MAD-8 FORMAT
+! ".lat" file
+
+long    :  drift, l = 3.0 ;
+o       :  drift, l = 0.5 ;
+short   :  drift, l = 0.6 ;
+
+! mux = muy = 6.700 (100.5o cells )
+K1F     :  =  5.341643E-02 ; 
+K1D     :  = -5.755604E-02 ; 
+
+F       :  sbend, l = 2.889612, angle = -.070742380, k1 =  K1F ;
+D       :  sbend, l = 2.889612, angle = -.060157314, k1 =  K1D ;
+
+!  MARKERS
+SF : MARKER ; ! START OF F MAGNET
+EF : MARKER ; ! END OF F
+SD : MARKER ; ! START OF D
+ED : MARKER ; ! END OF D
+MID: MARKER ;
+MDD: MARKER ;
+MQQ: MARKER ;
+END: MARKER ;
+
+CSTART: MARKER ;
+CEND  : MARKER ;
+BSTART : MARKER ;
+BSEND   : MARKER ;
+
+! FOR MAD-X FORMAT THE "&" CONTINUATION SIGN DOESN'T APPEAR
+bcell   :  line = ( END,long,  SD,D,ED, o, SF,F,EF, short, 
+                    MID,short, SF,F,EF, o, SD,D,ED, long ) ; 
+
+!first   :  line = ( long, D, o, F, short, &
+!                    short, F, o, D, long ) ; 
+
+quarter :  line = ( 6*bcell ) ;
+BOOSTER :  LINE = ( 4*quarter, END) ;
+
+!*****separated function Booster *****
+!***** starting k= inverse of 6.28/sin(100deg/2)*0.25=0.49
+
+!QF:  quadrupole, l=0.25, k1= 5.341643E-02*2.889612/0.25 ;
+!QD:  quadrupole, l=0.25, k1= -5.755604E-02*2.889612/0.25 ;
+
+qfk1: =0.49 ;
+qdk1: =-0.49 ;
+
+QF:  quadrupole, l=0.25, k1:= qfk1 ;
+QD:  quadrupole, l=0.25, k1:= qdk1 ;
+
+!QF:  quadrupole, l=0.25, k1= 0.45 ;
+!QD:  quadrupole, l=0.25, k1:= -0.45 ;
+
+
+DIP:  RBEND, l=4.78163354,ANGLE=2*pi/48 ;
+
+DM:   DRIFT, l=0.5 ;
+
+SCELL: line = (QF,DM,DIP,DM,QD,MID,QD,DM,DIP,DM,QF) ;
+
+SBOOSTER: line = (24*SCELL) ;
+

@@ -1,0 +1,30 @@
+!
+! ".cmd" file
+
+ke     : =0.400 ;
+etotal :=pmass+ke ;
+
+beam, particle=proton, energy=etotal ;
+
+call file=BoosterSF.lat  ;
+
+beta=sqrt(1-1/beam->gamma^2);     
+etax  :=beta*table(twiss,dx); 
+detax :=beta*table(twiss,dpx) ;
+
+
+!**** separated function Booster*****
+
+Use, period=SCELL ;
+
+  select, flag=twiss, clear;
+  !  select, flag =twiss, column=name,s,betx,alfx,mux,dx,dpx,bety,alfy,muy;
+  select, flag =twiss, column=name,s,betx,alfx,mux,etax,detax,bety,alfy,muy;
+Twiss, file=BoosterSF_out.tfs ;
+
+
+ plot, HAXIS=s,interpolate,
+        VAXIS1=betx,bety,VAXIS2=etax,
+	STYLE=1,
+	COLOUR=100,
+        TITLE="Booster_SF_design";
