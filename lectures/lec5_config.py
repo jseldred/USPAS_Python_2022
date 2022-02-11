@@ -2,24 +2,45 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import csv
 import sys
 
 #sys.argv is a list of input arguments for the file
 #the first input is 1 (since 0 is the python file name)
 
-##These are the default values of the inputs
-#spring constant and particle mass
+#I can use the default parameters on this script with no arguments
+#or I can specify parameters from the configuration file by one arguments
+#or I can specify parameters from the command line with two input, four, or six.
+
+#spring constant and object mass
 k = 3.0
 m = 0.5
-#initial conditions
+#initial coordinates
 x0 = 1.0
 p0 = 0.0
-#timestep config
+#timestep parameters
 tstep = 0.01
 tmax = 2.0
 
-##This overwrites the default values
-#I can specify no parameters, just the first two, just the first four, or all six.
+#this is the default name of the configuration file
+fname = 'lec5_config.txt'
+
+#if there is only one input assume it is the string for a configuration file
+if len(sys.argv) == 2:
+  #use this filename instead of default filename
+  fname = str(sys.argv[1])
+  with open(fname) as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=' ')
+    for row in csv_reader:
+      if len(row) > 0 and str(row[0]).replace('.','',1).isnumeric():
+        k = float(row[0])
+        m = float(row[1])
+        x0 = float(row[2])
+        p0 = float(row[3])
+        tstep = float(row[4])
+        tmax = float(row[5])
+
+#these will overwrite the default values I read from my configuration file
 if len(sys.argv) == 3:
   try:
     k = float(sys.argv[1])
