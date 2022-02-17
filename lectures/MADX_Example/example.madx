@@ -1,0 +1,32 @@
+qk1 := 0.250076;
+ld = 5.0;
+lq = 1.0;
+
+D1: DRIFT,L=ld;
+QF1: QUADRUPOLE,L=0.5*lq,K1:=qk1;
+QD1: QUADRUPOLE,L=0.5*lq,K1:=-qk1;
+D2: DRIFT,L=ld;
+QF2: QUADRUPOLE,L=0.5*lq,K1:=qk1;
+QD2: QUADRUPOLE,L=0.5*lq,K1:=-qk1;
+
+FODO: LINE=(QF1,D1,QD1,QD2,D2,QF2);
+
+beam,particle=proton,energy=120.938;
+use,period=FODO;
+
+twiss, save, file=twiss.out,
+BETX=15.0, BETY=5.0;
+
+plot ,haxis=s, vaxis=betx, bety,
+file=beta_plot;
+
+track, file=track_, ONEPASS=true, dump, onetable;
+start, x= 1, px=0, y= 0, py=0;
+OBSERVE, PLACE=QF1;
+OBSERVE, PLACE=D1;
+OBSERVE, PLACE=QD1;
+OBSERVE, PLACE=QD2;
+OBSERVE, PLACE=D2;
+OBSERVE, PLACE=QF2;
+run,turns=1;
+endtrack;
